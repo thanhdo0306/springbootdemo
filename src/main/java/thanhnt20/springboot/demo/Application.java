@@ -25,14 +25,19 @@ public class Application {
 //		dress1.wear();
 
 		//	Example about bean from Interface
-		Outfit outfit = context.getBean(Outfit.class);
-		System.out.println("Demo by ThanhNT20 ==> Instance from Interface: " + outfit);
-		outfit.wear();
+//		Outfit outfit = context.getBean(Outfit.class);
+//		System.out.println("Demo by ThanhNT20 ==> Instance from Interface: " + outfit);
+//		outfit.wear();
 
 		// Example about component scan
 		Bikini bikini = context.getBean(Bikini.class);
 		System.out.println("Demo by ThanhNT20 ==> Instance bikini: " + bikini);
 		bikini.wear();
+
+		// Example with autowired
+		GirlFriend	girlFriend = context.getBean(GirlFriend.class);
+		System.out.println(girlFriend.outfit);
+		girlFriend.outfit.wear();
 
 	}
 

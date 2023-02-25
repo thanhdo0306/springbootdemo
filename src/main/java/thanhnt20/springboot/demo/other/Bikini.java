@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import thanhnt20.springboot.demo.Outfit;
 
 @Component("bikini")
-@Primary
+//@Primary
 public class Bikini implements Outfit {
     @Override
     public void wear() {
